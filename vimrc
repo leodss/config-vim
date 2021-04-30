@@ -68,7 +68,7 @@ vmap y y']
 ""Paste a region in VIM without the cursor moving to the top of the block
 noremap p p']
 
-""Load header
+""Load header file
 autocmd bufnewfile *.sv :0r ~/.vim/header/_.sv
 autocmd bufnewfile *.v :0r ~/.vim/header/_.v
 autocmd bufnewfile *.csh :0r ~/.vim/header/_.csh
