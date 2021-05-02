@@ -54,21 +54,27 @@ set nowrap
 set tw=100
 set formatoptions=tnmM
 set cursorline
+set visualbell
+set t_vb=
 colorscheme apprentice
 
 ""Function
+"Delete Trailing white space
 function StripTrailingWhiteSpace()
 	%s/\s\+$//e
 endfunction
 nmap <silent> <leader>d :call StripTrailingWhiteSpace()<CR>
-
-""Yank a region in VIM without the cursor moving to the top of the block
+"Yank a region in VIM without the cursor moving to the top of the block
 vmap y y']
-
-""Paste a region in VIM without the cursor moving to the top of the block
+"Paste a region in VIM without the cursor moving to the top of the block
 noremap p p']
+"exit INSERT mode withour moving cursor (press fj or jf)
+set timeoutlen=300
+inoremap fj <ESC>l
+inoremap jf <ESC>l
 
-""Load header file
+
+""Load header
 autocmd bufnewfile *.sv :0r ~/.vim/header/_.sv
 autocmd bufnewfile *.v :0r ~/.vim/header/_.v
 autocmd bufnewfile *.csh :0r ~/.vim/header/_.csh
