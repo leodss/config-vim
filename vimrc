@@ -65,9 +65,9 @@ function StripTrailingWhiteSpace()
 endfunction
 nmap <silent> <leader>d :call StripTrailingWhiteSpace()<CR>
 "Yank a region in VIM without the cursor moving to the top of the block
-vmap y y']
+vmap yy y']
 "Paste a region in VIM without the cursor moving to the top of the block
-noremap p p']
+noremap pp p']
 "exit INSERT mode withour moving cursor (press fj or jf)
 set timeoutlen=300
 inoremap fj <ESC>l
