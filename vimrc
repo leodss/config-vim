@@ -5,6 +5,7 @@ call vundle#begin()
 	Plugin 'VundleVim/Vundle.vim'
 	Plugin 'ervandew/supertab'
 	Plugin 'scrooloose/nerdtree'
+  Plugin 'brooth/far.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -89,3 +90,4 @@ let NERDTreeIgnore = ['\~$', '\.swp$', '\.o']
 let NERDTreeWinSize=30
 let NERDTreeShowHidden=1
 let NERDTreeDirArrows=1
+let g:far#enable_undo=1

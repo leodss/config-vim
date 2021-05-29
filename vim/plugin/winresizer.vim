@@ -68,8 +68,8 @@ let s:default_gui_start_key = '<C-A>'
 let g:winresizer_gui_start_key = get(g:, 'winresizer_gui_start_key', s:default_gui_start_key)
 let g:winresizer_gui_enable = get(g:, 'winresizer_gui_enable', 0)
 
-let g:winresizer_vert_resize  = get(g:, 'winresizer_vert_resize', 10)
-let g:winresizer_horiz_resize = get(g:, 'winresizer_horiz_resize', 3)
+let g:winresizer_vert_resize  = get(g:, 'winresizer_vert_resize', 5)
+let g:winresizer_horiz_resize = get(g:, 'winresizer_horiz_resize', 5)
 
 " resize mode key mapping
 let s:default_keycode = {
